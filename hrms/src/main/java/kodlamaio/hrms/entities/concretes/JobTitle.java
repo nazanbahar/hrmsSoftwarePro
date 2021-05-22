@@ -14,17 +14,17 @@ import lombok.NoArgsConstructor;
 //lombok
 
 @Data  //getter-setter 
-@Entity //Veritabanı Nesnesi
-@Table(name="job_positions")  //veitabanı tablosuna kasilik
-@NoArgsConstructor //parametresiz
-@AllArgsConstructor //parameter constructor
-
-public class JobPosition {
+@Entity //veritabanı nesnesi
+@Table(name="job_titles")  //veritabanı tablosuna karsilik
+@NoArgsConstructor // non parameter constructor
+@AllArgsConstructor // parameter constructor
+public class JobTitle {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) //identity
 	@Column(name="id")
 	private int id;
+	
 	@Column(name="title")
 	//@Column(name="title_a")
 	private String title;
