@@ -47,15 +47,25 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
-		
+		<!--	
 		<dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-ui</artifactId>
             <version>1.5.2</version>
-        </dependency>
-		
-		
+        </dependency>      
+        -->
+		<!-- Spring-boot Dependencies : Adding the Maven Dependency -->
+		<dependency>
+   			<groupId>io.springfox</groupId>
+    		<artifactId>springfox-swagger2</artifactId>
+    		<version>2.9.2</version>
+		</dependency>
+		<!-- Spring-boot Dependencies : Enabling Springfoxs Swagger UI -->
+		<dependency>
+    		<groupId>io.springfox</groupId>
+    		<artifactId>springfox-swagger-ui</artifactId>
+    		<version>2.9.2</version>
+		</dependency>
 	</dependencies>
 
 	<build>
